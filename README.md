@@ -3,7 +3,7 @@
 ---
 
 # Preview
-![Sistema - Clínica Veterinária](https://github.com/viniciustavanoferreira/html-css-js/blob/master/assets/_images/preview.png)
+![Sistema - Clínica Veterinária](https://github.com/viniciustavanoferreira/sidebar/blob/master/assets/_images/preview.png)
 
 ---
 # Desafio
