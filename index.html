@@ -1,0 +1,118 @@
+<html lang="en" style="overflow-y:scroll;">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Sistema para Clínica Veterinária</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <link href="fonts.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="figma-frame" data-constraint-x="MIN" data-constraint-y="MIN" id="20:107" name="sidebar-open"
+            style="background-color:rgba(255, 255, 255, 1.0);border-radius:0px;border-width:1px;height:768px;margin:0px auto;opacity:1;position:relative;transform:rotate(0deg);width:1366px;">
+            <div class="figma-rectangle" name="background"
+                style="background-color:rgba(220, 228, 227, 1.0);border-radius:0px;border-width:1px;height:768px;left:0px;opacity:1;position:absolute;top:0px;transform:rotate(0deg);width:1366px;">
+            </div>
+            <div class="figma-rectangle" id="sidebar"
+                style="background-color:rgba(24, 194, 156, 1.0);border-radius:0px;border-width:1px;height:768px;left:0px;opacity:1;position:absolute;top:0px;transform:rotate(0deg);width:250px;">
+            </div>
+            <div class="figma-rectangle" name="rectangle-9"
+                style="background-color:rgba(142, 215, 198, 1.0);border-radius:0px;border-width:1px;height:60px;left:-1px;opacity:1;position:absolute;top:708px;transform:rotate(0deg);width:251px;">
+            </div>
+            <div class="figma-frame" data-constraint-x="MIN" data-constraint-y="MIN" id="20:122" name="btn"
+                style="border:none;background-color:transparent;height:24px;left:200px;opacity:1;position:absolute;top:26px;transform:rotate(0deg);width:24px;">
+                <img src="./assets/_vectors/menu.svg"
+                    style="border-width:2px;height:16px;left:3px;opacity:1;position:absolute;top:3px;transform:rotate(0deg);width:16px;"
+                    alt="" onclick="moveSidebar()">
+            </div>
+            <div class="figma-text" name="dashboard"
+                style="color:rgba(8, 66, 54, 1.0);font-family:Poppins;font-size:15px;font-weight:400;height:23px;left:64px;letter-spacing:0%;line-height:23px;opacity:1;position:absolute;text-align:left;text-decoration:NONE;top:147px;transform:rotate(0deg);white-space:pre-wrap;width:132px;"
+                type="TEXT">Dashboard</div>
+            <div class="figma-frame" data-constraint-x="MIN" data-constraint-y="MIN" id="20:122" name="grid"
+                style="border-radius:0px;border-width:1px;height:24px;left:27px;opacity:1;position:absolute;top:147px;transform:rotate(0deg);width:24px;">
+                <img src="./assets/_vectors/grid.svg"
+                    style="border-width:2px;height:16px;left:3px;opacity:1;position:absolute;top:3px;transform:rotate(0deg);width:16px;">
+            </div>
+            <div class="figma-text" name="clientes"
+                style="color:rgba(8, 66, 54, 1.0);font-family:Poppins;font-size:15px;font-weight:400;height:23px;left:64px;letter-spacing:0%;line-height:23px;opacity:1;position:absolute;text-align:left;text-decoration:NONE;top:264px;transform:rotate(0deg);white-space:pre-wrap;width:132px;"
+                type="TEXT">Clientes</div>
+            <div class="figma-frame" data-constraint-x="MIN" data-constraint-y="MIN" id="20:127" name="user"
+                style="border-radius:0px;border-width:1px;height:24px;left:27px;opacity:1;position:absolute;top:263px;transform:rotate(0deg);width:24px;">
+                <img src="./assets/_vectors/user.svg"
+                    style="border-width:2px;height:16px;left:3px;opacity:1;position:absolute;top:3px;transform:rotate(0deg);width:16px;">
+            </div>
+            <div class="figma-rectangle" name="input"
+                style="background-color:rgba(142, 215, 198, 1.0);border-radius:12px;border-width:1px;height:50.91743087768555px;left:14px;opacity:1;position:absolute;top:76px;transform:rotate(0deg);width:222px;">
+            </div>
+            <div class="figma-text" name="buscar"
+                style="color:rgba(8, 66, 54, 1.0);font-family:Poppins;font-size:15px;font-weight:400;height:23px;left:64px;letter-spacing:0%;line-height:23px;opacity:1;position:absolute;text-align:left;text-decoration:NONE;top:90px;transform:rotate(0deg);white-space:pre-wrap;width:52px;"
+                type="TEXT">Buscar</div>
+            <div class="figma-frame" data-constraint-x="MIN" data-constraint-y="MIN" id="20:130" name="search"
+                style="border-radius:0px;border-width:1px;height:24px;left:27px;opacity:1;position:absolute;top:89px;transform:rotate(0deg);width:24px;">
+                <img src="./assets/_vectors/search.svg"
+                    style="border-width:2px;height:16px;left:3px;opacity:1;position:absolute;top:3px;transform:rotate(0deg);width:16px;">
+            </div>
+            <div class="figma-text" name="pets"
+                style="color:rgba(8, 66, 54, 1.0);font-family:Poppins;font-size:15px;font-weight:400;height:23px;left:64px;letter-spacing:0%;line-height:23px;opacity:1;position:absolute;text-align:left;text-decoration:NONE;top:205px;transform:rotate(0deg);white-space:pre-wrap;width:132px;"
+                type="TEXT">Pets</div>
+            <div class="figma-frame" data-constraint-x="MIN" data-constraint-y="MIN" id="20:133" name="pet"
+                style="border-radius:0px;border-width:1px;height:24px;left:27px;opacity:1;position:absolute;top:205px;transform:rotate(0deg);width:24px;">
+                <div class="figma-group" style="">
+                    <div class="figma-group" style=""><img src="./assets/_vectors/pet.svg"
+                            style="border-width:2px;height:16px;left:3px;opacity:1;position:absolute;top:3px;transform:rotate(0deg);width:16px;">
+                    </div>
+                </div>
+            </div>
+            <div class="figma-text" name="ajustes"
+                style="color:rgba(8, 66, 54, 1.0);font-family:Poppins;font-size:15px;font-weight:400;height:23px;left:64px;letter-spacing:0%;line-height:23px;opacity:1;position:absolute;text-align:left;text-decoration:NONE;top:379px;transform:rotate(0deg);white-space:pre-wrap;width:132px;"
+                type="TEXT">Ajustes</div>
+            <div class="figma-frame" data-constraint-x="MIN" data-constraint-y="MIN" id="20:141" name="settings"
+                style="border-radius:0px;border-width:1px;height:24px;left:27px;opacity:1;position:absolute;top:379px;transform:rotate(0deg);width:24px;">
+                <img src="./assets/_vectors/settings.svg"
+                    style="border-width:2px;height:16px;left:3px;opacity:1;position:absolute;top:3px;transform:rotate(0deg);width:16px;">
+            </div>
+            <div class="figma-text" name="vets"
+                style="color:rgba(8, 66, 54, 1.0);font-family:Poppins;font-size:15px;font-weight:400;height:23px;left:64px;letter-spacing:0%;line-height:23px;opacity:1;position:absolute;text-align:left;text-decoration:NONE;top:322px;transform:rotate(0deg);white-space:pre-wrap;width:132px;"
+                type="TEXT">Vets</div>
+            <div class="figma-frame" data-constraint-x="MIN" data-constraint-y="MIN" id="20:144" name="user-md"
+                style="border-radius:0px;border-width:1px;height:24px;left:27px;opacity:1;position:absolute;top:321px;transform:rotate(0deg);width:24px;">
+                <img src="./assets/_vectors/vet.svg"
+                    style="border-width:1px;height:20.87015151977539px;left:2px;opacity:1;position:absolute;top:1px;transform:rotate(0deg);width:19.879947662353516px;">
+            </div>
+            <div class="figma-text" name="dashboard"
+                style="color:rgba(8, 66, 54, 1.0);font-family:Poppins;font-size:25px;font-weight:500;height:38px;left:268px;letter-spacing:0%;line-height:auto;opacity:1;position:absolute;text-align:left;text-decoration:NONE;top:18px;transform:rotate(0deg);white-space:pre-wrap;width:141px;"
+                type="TEXT">Dashboard</div>
+            <div class="figma-frame" data-constraint-x="MIN" data-constraint-y="MIN" id="20:147" name="log-out"
+                style="border-radius:0px;border-width:1px;height:24px;left:236px;opacity:1;position:absolute;top:726px;transform:rotate(-180deg);width:24px;">
+            </div>
+            <div class="figma-rectangle" name="avatar"
+                style="background:center / contain no-repeat url('assets/_images/eleanor_pena.png');border-radius:12px;border-width:1px;height:45px;left:13px;opacity:1;position:absolute;top:716px;transform:rotate(0deg);width:45px;">
+            </div>
+            <div class="figma-group" style="">
+                <div class="figma-text" name="eleanor-pena"
+                    style="color:rgba(8, 66, 54, 1.0);font-family:Poppins;font-size:15px;font-weight:400;height:23px;left:67px;letter-spacing:0%;line-height:23px;opacity:1;position:absolute;text-align:left;text-decoration:NONE;top:720px;transform:rotate(0deg);white-space:pre-wrap;width:98px;"
+                    type="TEXT">Eleanor Pena</div>
+                <div class="figma-text" name="veterinária"
+                    style="color:rgba(8, 66, 54, 1.0);font-family:Poppins;font-size:12px;font-weight:400;height:18px;left:67px;letter-spacing:0%;line-height:18px;opacity:1;position:absolute;text-align:left;text-decoration:NONE;top:738px;transform:rotate(0deg);white-space:pre-wrap;width:67px;"
+                    type="TEXT">Veterinária</div>
+            </div>
+            <div class="figma-group" style="">
+                <div class="figma-text" name="vet."
+                    style="color:rgba(8, 66, 54, 1.0);font-family:Poppins;font-size:15px;font-weight:500;height:23px;left:62px;letter-spacing:0%;line-height:auto;opacity:1;position:absolute;text-align:left;text-decoration:NONE;top:26.12200927734375px;transform:rotate(0deg);white-space:pre-wrap;width:31px;"
+                    type="TEXT">VET.</div>
+                <div class="figma-group" style=""><img src="./assets/_vectors/logo.svg"
+                        style="border-width:1px;height:24.360729217529297px;left:29.380636394023895px;opacity:1;position:absolute;top:24.380636394023895px;transform:rotate(0deg);width:27.93865966796875px;">
+                </div>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+
+</html>
